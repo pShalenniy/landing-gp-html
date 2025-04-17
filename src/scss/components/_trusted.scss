@@ -1,0 +1,19 @@
+.trusted-grid {
+  display: flex;
+  margin: 0 -16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 0;
+
+  img {
+    margin: 16px;
+    max-width: 20%;
+    min-width: 200px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+}

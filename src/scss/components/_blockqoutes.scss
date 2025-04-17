@@ -1,0 +1,148 @@
+.blockquote {
+  width: 480px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: -36px;
+    top: -24px;
+    width: 51px;
+    height: 48px;
+    z-index: -1;
+    background: {
+      position: center;
+      size: contain;
+      repeat: no-repeat;
+      image: url(./images/home/testimonial/quotes.svg);
+    }
+  }
+
+  &__cite {
+    position: relative;
+    padding-left: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: $light;
+    min-height: 80px;
+
+    img {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: calc(50% - 40px);
+      border-radius: 50%;
+    }
+
+    strong {
+      font-weight: 600;
+      color: $text-color;
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__message {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 16px 0 52px;
+
+    &:after {
+      left: 16px;
+      top: -30px;
+    }
+  }
+}
+
+.section-blockquotes {
+  padding-bottom: 150px;
+
+  @media (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.blockquotes-wrapper {
+  width: 880px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .swiper-container {
+    padding: 30px 0;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 58px;
+      height: 58px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: {
+        size: contain;
+        position: center;
+        repeat: no-repeat;
+      }
+      cursor: pointer;
+      transition: $transition;
+      z-index: 2;
+
+      &:hover:not(.swiper-button-disabled) {
+        opacity: 0.6;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .swiper-button-disabled {
+      opacity: 0;
+    }
+
+    .swiper-button-prev {
+      background-image: url(./images/home/testimonial/Arrow-Left.svg);
+      left: 0;
+    }
+
+    .swiper-button-next {
+      background-image: url(./images/home/testimonial/Arrow-Right.svg);
+      right: 0;
+    }
+
+    @media (max-width: 767px) {
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+      }
+
+      .swiper-button-prev {
+        left: 8px;
+        background-image: url(./images/home/testimonial/Arrow-Left-m.svg);
+      }
+
+      .swiper-button-next {
+        right: 8px;
+        background-image: url(./images/home/testimonial/Arrow-Right-m.svg);
+      }
+    }
+  }
+}

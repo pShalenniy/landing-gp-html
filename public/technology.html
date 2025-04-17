@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico">
+  <title>Technology</title>
+  <link href="./main.css" rel="stylesheet" />
+</head>
+<body>
+<div id="app">
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="header__logo">
+          <img src="./images/logo.svg" alt="Landing">
+        </a>
+
+        <div class="header__menu">
+          <a href="about.html">About</a>
+          <a href="technology.html" class="active">Technology</a>
+          <a href="request.html" class="btn btn-primary ">Request a demo</a>
+        </div>
+
+        <button class="btn-toggle">
+          <span class="btn-toggle-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section section-hero section-img-right">
+        <svg
+            class="section-img-bg"
+            width="100%"
+            viewBox="0 0 1440 712"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0,-1000L1440,-1000L1440,556L0,712" fill="#0D1040" />
+        </svg>
+        <picture class="picture section-img-bg">
+          <source media="(max-width: 376px)"
+                  srcset="./images/tech/BG-m.png 1x, ./images/tech/BG-m@2x.png 2x">
+          <source srcset="./images/tech/BG.png 1x, ./images/tech/BG@2x.png 2x">
+          <img alt="Data ingestion & Processing"
+               src="./images/tech/BG-m.png" loading="lazy"
+               srcset="./images/tech/BG-m.png 1x, ./images/tech/BG-m@2x.png 2x">
+        </picture>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <h1 class="section-title h1">
+                Built on cutting edge tech
+              </h1>
+
+              <p>
+                We use cutting edge AI to get a deep understanding of traveller
+                preferences and deliver personalised, right time, right channel
+                messages designed to optimise conversions.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 pl-md-0">
+              <picture class="picture">
+                <source media="(max-width: 376px)"
+                        srcset="./images/tech/Hero-m.png 1x, ./images/tech/Hero-m@2x.png 2x">
+                <source srcset="./images/tech/Hero.png 1x, ./images/tech/Hero@2x.png 2x">
+                <img alt="Built specifically to enhance TMC revenues"
+                     src="./images/tech/Hero-m.png" loading="lazy"
+                     srcset="./images/tech/Hero-m.png 1x, ./images/tech/Hero-m@2x.png 2x">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-benefit section-img-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                  width="80px"
+                  class="section-icon"
+                  src="./images/tech/benefits-icons/Chart.svg"
+                  alt="Data ingestion & Processing"
+              />
+
+              <h2 class="section-title">
+                Data ingestion & Processing
+              </h2>
+
+              <p>
+                We start by ingesting data from multiple sources, including
+                historical bookings, live trip information and company policies to
+                get a clear understanding of each traveller and where the
+                <strong>opportunity for retargeting</strong> lies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <picture class="picture section-img">
+          <source media="(max-width: 376px)"
+                  srcset="./images/tech/Data-m.png 1x, ./images/tech/Data-m@2x.png 2x">
+          <source srcset="./images/tech/Data.png 1x, ./images/tech/Data@2x.png 2x">
+          <img alt="Data ingestion & Processing"
+               src="./images/tech/Data-m.png" loading="lazy"
+               srcset="./images/tech/Data-m.png 1x, ./images/tech/Data-m@2x.png 2x">
+        </picture>
+      </section>
+
+      <section class="section section-benefit section-img-right">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                  width="80px"
+                  class="section-icon"
+                  src="./images/tech/benefits-icons/Ai.svg"
+                  alt="Recommendations Engine"
+              />
+
+              <h2 class="section-title">
+                Recommendations Engine
+              </h2>
+
+              <p>
+                Our state of the art AI then builds recommendations that are both
+                <strong>personalised</strong> to each user and
+                <strong>optimised</strong> for time and channel, to ensure
+                conversion rates are maximised.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <picture class="picture section-img">
+          <img alt="Recommendations Engine" class="show-desktop"
+               src="./images/tech/Recc.png"
+               srcset="./images/tech/Recc.png 1x, ./images/tech/Recc@2x.png 2x">
+          <img alt="Recommendations Engine" class="show-mobile"
+               src="./images/tech/Recc.png"
+               srcset="./images/tech/Recc-m.png 1x, ./images/tech/Recc-m@2x.png 2x">
+        </picture>
+      </section>
+
+      <section class="section section-benefit section-img-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                  width="80px"
+                  class="section-icon"
+                  src="./images/tech/benefits-icons/Care.svg"
+                  alt="Feedback loop & training"
+              />
+
+              <h2 class="section-title">
+                Feedback loop & training
+              </h2>
+
+              <p>
+                We track message and platform interactions and combine this with
+                direct and indirect customer feedback to help fine-tune the
+                recommendations for next time so they are
+                <strong>always improving.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <picture class="picture section-img">
+          <source media="(max-width: 376px)"
+                  srcset="./images/tech/Feedback-m.png 1x, ./images/tech/Feedback-m@2x.png 2x">
+          <source srcset="./images/tech/Feedback.png 1x, ./images/tech/Feedback@2x.png 2x">
+          <img alt="Feedback loop & training"
+               src="./images/tech/Feedback-m.png" loading="lazy"
+               srcset="./images/tech/Feedback-m.png 1x, ./images/tech/Feedback-m@2x.png 2x">
+        </picture>
+      </section>
+
+      <section class="section section-devices section-bg-secondary section-img-right">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2 class="section-title h1">
+                The Result
+              </h2>
+
+              <p>
+                A happy traveller. A happy client, A happy TMC.
+              </p>
+
+              <a href="./request.html" class="btn btn-primary section-btn">
+                Book a demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <picture class="picture section-img section-img--contain position-right devices-tech">
+          <source media="(max-width: 376px)"
+                  srcset="./images/tech/Devices-m.png 1x, ./images/tech/Devices-m@2x.png 2x">
+          <source srcset="./images/tech/Devices.png 1x, ./images/tech/Devices@2x.png 2x">
+          <img alt="The Result"
+               src="./images/tech/Devices-m.png" loading="lazy"
+               srcset="./images/tech/Devices-m.png 1x, ./images/tech/Devices-m@2x.png 2x">
+        </picture>
+      </section>
+
+      <section class="section section-trusted">
+        <div class="container">
+          <h2 class="section-title text-center">
+            Trusted by
+          </h2>
+
+          <div class="trusted-grid">
+            <img src="./images/home/trusted/gdg.svg" alt="Travel" />
+            <img src="./images/home/trusted/focus.png" alt="Focus Travel Partnership" />
+            <img src="./images/home/trusted/beyond.jpg" alt="Beyond Business Travel" />
+            <img src="./images/home/trusted/booking.svg" alt="Booking.com" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-blockquotes">
+        <div class="container">
+          <div class="blockquotes-wrapper">
+            <blockquote class="blockquote">
+              <div class="blockquote__message">
+                With travel volumes at historic lows, it has never been more
+                important to improve revenue per trip.
+              </div>
+              <cite class="blockquote__cite">
+                <img
+                    alt="Dave"
+                    src="./images/home/testimonial/Dave.jpeg"
+                />
+                <strong>Dave</strong>
+                Commercial Director
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-auto">
+            <h3 class="footer__title">Website</h3>
+            <a class="footer__link" href="./about.html">About</a>
+            <a class="footer__link" href="./technology.html">Technology</a>
+          </div>
+
+          <div class="col-6 col-md-auto">
+            <h3 class="footer__title">Legal</h3>
+            <a class="footer__link" href="./privacy-policy.html">Privacy Policy</a>
+            <a class="footer__link" href="./terms-and-conditions.html">Terms and Conditions</a>
+            <a class="footer__link" href="./cookies-policy.html">Cookie Policy</a>
+            <a class="footer__link" href="./acceptable-use-policy.html">Acceptable Use Policy</a>
+          </div>
+
+          <div class="col-12 col-md-auto">
+            <h3 class="footer__title">Get in touch</h3>
+
+            <div class="footer__row">
+              <a class="footer__mail-link" href="mailto:info@Landing.travel">
+                info@Landing.travel
+              </a>
+
+              <div class="footer__social">
+                <a
+                    href="https://www.linkedin.com/company/yourLanding/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" class="footer__social--icon">
+                    <path fill="currentColor"
+                          d="M15 0a3 3 0 013 3v12a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3h12zM6.134 7.165h-2.25v7.085h2.25V7.165zM11.659 7c-1.195 0-1.73.688-2.029 1.17V7.165H7.38c.027.613.004 6.107 0 6.971v.114h2.25v-3.957c0-.211.015-.423.074-.574.163-.423.533-.861 1.155-.861.815 0 1.14.65 1.14 1.602v3.79h2.25l.001-4.062c0-2.176-1.11-3.19-2.591-3.19zM5.023 3.75c-.77 0-1.273.53-1.273 1.224 0 .68.488 1.224 1.244 1.224h.014c.785 0 1.274-.544 1.274-1.224-.015-.695-.489-1.224-1.259-1.224z"></path>
+                  </svg>
+                </a>
+                <a
+                    href="https://twitter.com/Landing_trvl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" class="footer__social--icon">
+                    <path fill="currentColor"
+                          d="M8.74 4.49l.039.649-.65-.08c-2.367-.304-4.435-1.337-6.191-3.071l-.859-.86-.22.635c-.469 1.416-.17 2.913.806 3.919.52.556.403.635-.494.304-.313-.105-.586-.185-.612-.145-.09.092.221 1.297.468 1.774.339.662 1.028 1.31 1.782 1.695l.638.304-.755.014c-.728 0-.754.013-.676.29.26.862 1.288 1.775 2.432 2.172l.806.278-.702.424a7.276 7.276 0 01-3.486.98c-.585.013-1.066.066-1.066.106 0 .132 1.587.874 2.51 1.165 2.77.86 6.06.49 8.532-.98 1.756-1.046 3.512-3.125 4.331-5.137.442-1.073.884-3.032.884-3.972 0-.61.04-.689.768-1.417.429-.424.832-.887.91-1.02.13-.251.117-.251-.546-.026-1.105.397-1.262.344-.715-.252.403-.423.884-1.191.884-1.416 0-.04-.195.026-.416.145-.234.133-.754.331-1.145.45l-.702.225-.637-.436c-.351-.239-.846-.504-1.106-.583-.663-.185-1.678-.159-2.276.053C9.65 1.273 8.623 2.809 8.74 4.49z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-auto mr-auto order-md-first footer__flex">
+            <div class="footer__logo">
+              <img src="./images/logo.svg" alt="Landing">
+            </div>
+
+            <p>© Landing, 2021. <br />All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie" id="cookies" style="display: none">
+      <div class="cookie__text">
+        We value your privacy. This site uses cookies and similar technologies to
+        analyse traffic, personalise content and continually improve our service.
+        For more detailed information about the cookies we use, see our
+        <a href="cookies-policy.html">Cookies page</a>.
+      </div>
+      <button class="btn btn-outline-primary" id="cookies-adjust-btn">
+        Adjust settings
+      </button>
+      <button class="btn btn-primary" id="cookies-accept-btn">
+        Accept
+      </button>
+    </div>
+
+    <div class="dialog" id="cookies-dialog" style="display: none">
+      <div class="cookies-dialog">
+        <h2>Your privacy</h2>
+        <p>
+          Cookies are small text files that are placed on your computer by
+          websites that you visit. They are widely used in order to make websites
+          work, or work more efficiently, as well as to provide information to the
+          owners of the site. Because we respect your right to privacy, you can
+          choose not to allow some kinds of cookies. Below you can find out about
+          the types of cookies that we use, and change your default settings.
+          Blocking some types of cookies may affect your experience of the site
+          and the services we are able to offer.
+        </p>
+
+        <h3>Necessary Cookies</h3>
+        <p>
+          These cookies are necessary for our site to function and cannot be
+          switched off in our system. They are set in response to provide our core
+          service, ensure the security of our site and record your cookie
+          preferences.
+        </p>
+
+        <h4>Security</h4>
+        <label class="switcher">
+          <input type="checkbox" checked disabled />
+          <span class="switcher__label">User experience</span>
+          <span class="switcher__button"></span>
+        </label>
+
+        <label class="switcher">
+          <input type="checkbox" checked disabled />
+          <span class="switcher__label">Cookie Preferences</span>
+          <span class="switcher__button"></span>
+        </label>
+
+        <h3>Analytics Cookies</h3>
+        <p>
+          These cookies allow us to identify the most and least popular sections
+          of the site and see how users move around on the site so that we can
+          measure and improve the performance of our site . All of the information
+          we gather is aggregated and anonymous.
+        </p>
+        <!--<label class="switcher">
+          <input id="amplitude-analytics" checked type="checkbox" />
+          <span class="switcher__label">Amplitude Analytics</span>
+          <span class="switcher__button"></span>
+        </label>-->
+        <label class="switcher">
+          <input id="google-analytics" checked type="checkbox" />
+          <span class="switcher__label">Google Analytics</span>
+          <span class="switcher__button"></span>
+        </label>
+
+        <hr class="my-5" />
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-outline-primary" id="cookies-close-btn">
+            Cancel
+          </button>
+
+          <button class="btn btn-primary ml-3" id="cookies-save-btn">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./bundle.js"></script>
+</body>
+</html>

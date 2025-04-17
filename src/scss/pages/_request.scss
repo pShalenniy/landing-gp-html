@@ -1,0 +1,29 @@
+.request-form {
+  width: 380px;
+  max-width: 100%;
+  margin-left: auto;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 40px 0 rgba(52, 52, 57, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 560px;
+    border: 0;
+  }
+
+  @include query-767 {
+    margin-right: auto;
+  }
+
+  @include queryMax(374px) {
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
+    max-width: calc(100% + 32px);
+  }
+}

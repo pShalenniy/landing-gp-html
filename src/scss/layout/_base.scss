@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+body {
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  @media (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+input,
+button {
+  font-family: $font-family;
+}
+
+a {
+  transition: $transition;
+
+  .v-icon {
+    transition: none;
+    color: currentColor;
+  }
+}
+
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 1214px;
+  max-width: 100%;
+
+  @media (max-width: 767px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $secondary;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 74px;
+    pointer-events: none;
+    z-index: -1;
+
+    @include query-767 {
+      height: 68px;
+    }
+  }
+
+  .content {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+.picture {
+  display: block;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.show-mobile {
+  @include queryMin(376px) {
+    display: none;
+  }
+}
+
+.show-desktop {
+  @include queryMax(375px) {
+    display: none;
+  }
+}

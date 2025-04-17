@@ -1,0 +1,25 @@
+@import "utils/__utils";
+@import "bootstrap";
+@import "layout/base";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content";
+@import "layout/sections";
+@import "layout/section-video";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/cookies";
+@import "components/trusted";
+@import "components/blockqoutes";
+@import "pages/home";
+@import "pages/about";
+@import "pages/technology";
+@import "pages/request";
+
+.col-sm-award {
+  padding:5px;
+  margin-left:10px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 26%;
+}
